@@ -7,5 +7,5 @@
 - Certificate Manager
 - AWS Lambda
 - Dynamo DB
-- GitHub Actions
+- Jenkins 
 - Terraform
