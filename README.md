@@ -1,5 +1,5 @@
 ## Architecture Diagram:
-![arch diagram](https://github.com/saiguru0421/AWS-resume-site/assets/149320250/b418ca9a-7926-426e-a080-158d5f2f0eea)
+![pic07](https://github.com/saiguru0421/AWS-resume-site/assets/149320250/2aca2287-1201-484d-8164-7fb69e10e0fd)
 
 **Services Used:**
 - S3
