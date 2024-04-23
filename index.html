@@ -1,10 +1,10 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 	<head>
 		<title>Guru Subramaniam Shyamala</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" crossorigin="anonymous" /></noscript>
 	</head>
@@ -48,7 +48,10 @@
 											<li><a href="generic.html" class="button">Learn More</a></li>
 										</ul>
 									</div>
-									<span class="image"><img src="images/pic01.jpg" alt="Avatar" class="wdn-stretch rounded-corners"/></span>
+									<div class="profile-picture-container">
+										<img src="images/pic01.jpg" alt="Profile Picture" class="profile-picture">
+									</div>
+									<!-- <span class="image"><img src="images/pic01.jpg" alt="Profile Picture" class="profile-picture"/></span> -->
 								</div>
 							</section>
 
@@ -57,19 +60,60 @@
 								<header class="major">
 									<h2>Skill Summary</h2>
 								</header>
-								<ul class="features">
-									<li>Proficient in AWS, Azure, GCP and M365. </li>
-									<li>AWS: AWS Route 53, CloudFormation, ELB, EC2, RDS, VPC, Lambda, S3, DynamoDB, CloudWatch and ECS.</li>
-									<li>Azure: Azure DNS, Azure DevOps, Pipelines, Azure Automation, Azure Application Gateway, Azure Monitor, Cosmos DB and Azure Functions.</li>
-									<li>GCP: Cloud DNS, Deployment manager, Cloud load balancing, Compute Engine, Cloud SQL, VPC, Cloud Function, Cloud Storage, Firebase, Cloud Monitoring, Cloud Run jobs.</li>
-									<li>M365 services: Word, Excel, PowerPoint, Outlook, OneNote, Teams, SharePoint, OneDrive, Exchange, Yammer, Power BI, Stream, Forms, Planner, Visio, Project, Access</li>
-									<li>Programming languages: HashiCorp Configuration Language, HTML, CSS, Java, Python, JavaScript, Typescript.</li>
-									<li>Tools: Git, Github, Tableau, SharePoint Framework, SharePoint Migration Tool, SharePoint Designer, Gulp, yeoman, Adobe, SQL Server Management Studio, VS Code.</li>
-									<li>Well-known devops tools are Git Flow, Git actions, Jenkins, Ansible, CloudFormation and Terraform.</li>
-									<li>Visualization: Power Bi, Tableau, Google data studio.</li>
-									<li>Excellent interpersonal and communication skills.</li>
-									<li>Excellent analytical and problem solving skills.</li>
-								</ul>
+								<div class="skills-container">
+									<div class="skill-entry">
+										<i class="fa-brands fa-aws fa-2x" aria-hidden="true"></i>
+										<span>Amazon Web Service</span>
+									</div>
+									<div class="skill-entry">
+										<i class="fa-brands fa-microsoft fa-2x" aria-hidden="true"></i>
+										<span>Microsoft Azure Cloud</span>
+									</div>
+									<div class="skill-entry">
+										<i class="fa-brands fa-google fa-2x" aria-hidden="true"></i>
+										<span>Google Cloud Platform</span>
+									</div>
+									<div class="skill-entry">
+										<i class="fa-solid fa-laptop-code fa-2x" aria-hidden="true"></i>
+										<span>Full-Stack Development</span>
+									</div>
+									<div class="skill-entry">
+										<i class="fa fa-database fa-2x" aria-hidden="true"></i>
+										<span>Database Management</span>
+									</div>
+									<div class="skill-entry">
+										<i class="fa-brands fa-microsoft fa-2x" aria-hidden="true"></i>
+										<span>Microsoft 365 Ecosystem</span>
+									</div>
+									<div class="skill-entry">
+										<i class="fa-brands fa-docker fa-2x" aria-hidden="true"></i>
+										<span>Docker</span>
+									</div>
+									<div class="skill-entry">
+										<i class="fa-solid fa-gear fa-2x" aria-hidden="true"></i>
+										<span>Kubernetes</span>
+									</div>
+									<div class="skill-entry">
+										<i class="fa-solid fa-code fa-2x" aria-hidden="true"></i>
+										<span>Terraform</span>
+									</div>
+									<div class="skill-entry">
+										<i class="fa-solid fa-a fa-2x" aria-hidden="true"></i>
+										<span>Ansible</span>
+									</div>
+									<div class="skill-entry">
+										<i class="fa-brands fa-jenkins fa-2x" aria-hidden="true"></i>
+										<span>Jenkins</span>
+									</div>
+									<div class="skill-entry">
+										<i class="fa fa-chart-line fa-2x" aria-hidden="true"></i>
+										<span>Data Analytics</span>
+									</div>
+									<div class="skill-entry">
+										<i class="fa-brands fa-github fa-2x" aria-hidden="true"></i>
+										<span>Git Tools</span>
+									</div>
+								</div>
 							</section>
 
 						<!-- Second Section -->
@@ -77,16 +121,16 @@
 								<header class="major">
 									<h2>Education</h2>
 								</header>
-								<ul class="features">
-									<li> 
-										<h3><b>Conestoga College,</b></h3>
-										<h4>Ontario Graduate Certificate in Cloud Data Management (2023-2024),</h4>
-									</li>
-									<li> 
-										<h3><b>Prathyusha Engineering College,</b></h3>
-										<h4>Bachelor in Computer Science and Engineering (2018-2022),</h4>
-									</li>
-								</ul>
+								<div class="education-container">
+									<div class="education-entry">
+										<h3>Conestoga College</h3>
+										<p>Ontario Graduate Certificate in Cloud Data Management (2023-2024)</p>
+									</div>
+									<div class="education-entry">
+										<h3>Prathyusha Engineering College</h3>
+										<p>Bachelor in Computer Science and Engineering (2018-2022)</p>
+									</div>
+								</div>
 							</section>
 
 						<!-- Third Section -->
@@ -94,14 +138,16 @@
 							<header class="major">
 								<h2>Certifications</h2>
 							</header>
-							<ul class="features">
-								<li> 
-									<h3><b>AWS Certified Cloud Practitioner</b></h3>
-								</li>
-								<li> 
-									<h3><b>AWS Certified Solution Architecture Associate</b></h3>
-								</li>
-							</ul>
+							<div class="certifications-container">
+								<div class="certification-entry">
+									<a href="https://www.credly.com/badges/96476ed5-a1d2-453a-96cb-0be749271079/public_url"><img src="images/pic03.png" alt="AWS Certified Cloud Practitioner"></a>
+									<h3>AWS Certified Cloud Practitioner</h3>
+								</div>
+								<div class="certification-entry">
+									<a href="https://www.credly.com/badges/af545d1d-6af0-4f1d-b9e6-7715c4c0ee1e/public_url"><img src="images/pic04.png" alt="AWS Certified Solutions Architect"></a>
+									<h3>AWS Certified Solutions Architect</h3>
+								</div>
+							</div>
 						</section>
 
 						<!-- Get Started -->
