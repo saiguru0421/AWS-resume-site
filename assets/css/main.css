@@ -120,7 +120,7 @@ input, select, textarea {
 	}
 
 	body, input, select, textarea {
-		font-family: "Garamond", Helvetica, sans-serif;
+		font-family: "Amazon Ember";
 		font-size: 1.20em;
 		font-weight: 300;
 		line-height: 1.65;
@@ -137,7 +137,14 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			body, input, select, textarea {
-				font-size: 1.20em;
+				font-size: 13pt;
+			}
+
+		}
+		@media (max-width: 768px) {
+
+			body, input, select, textarea {
+				font-size: 12pt;
 			}
 
 		}
@@ -2208,26 +2215,32 @@ input, select, textarea {
 	.formerize-placeholder {
 		color: rgba(255, 255, 255, 0.5) !important;
 	}
+
+.projflex{
+	display: flex;
+	flex-wrap: wrap;
+}
+
 /* Skill Section*/
 	.skills-container {
 		display: flex;
-		justify-content: space-around; /* This will space out the skill entries evenly */
-		align-items: center; /* Align items vertically in the center */
-		flex-wrap: wrap; /* Allows wrapping onto the next line as needed */
+		justify-content: space-around; 
+		align-items: center; 
+		flex-wrap: wrap; 
 	}
 	
 	.skill-entry {
 		display: flex;
-		align-items: center; /* Align the icon and text in the center vertically */
+		align-items: center; 
 		margin: 1em;
 		transition: transform 0.3s ease;  
 		box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
 		padding: 0.5em;
-		flex-basis: 20%; /* Adjust basis per skill entry based on your needs */
+		flex-basis: 20%;
 	}
 	
 	.skill-entry i {
-		margin-right: 10px; /* Space between icon and text */
+		margin-right: 10px; 
 	}
 	.skill-entry:hover {
 		transform: scale(1.1);
