@@ -2428,7 +2428,108 @@ input, select, textarea {
 		.icon.alt:active {
 			background-color: rgba(255, 255, 255, 0.2);
 		}
-
+/*Blinking cursor*/
+	@keyframes blink {
+		0% { opacity: 1; }
+		50% { opacity: 0; }
+		100% { opacity: 1; }
+		}
+		
+		.blinking-cursor {
+		font-weight: 100;
+		font-size: 20px;
+		color: black;
+		-webkit-animation: blink 1s step-end infinite;
+		-moz-animation: blink 1s step-end infinite;
+		-ms-animation: blink 1s step-end infinite;
+		-o-animation: blink 1s step-end infinite;
+		animation: blink 1s step-end infinite;
+		}
+		  
+/*download button*/	
+	@keyframes buttonIconAnimation {
+		0% {
+		transform: translateY(0);
+		}
+		50% {
+		transform: translateY(-5px);
+		}
+		100% {
+		transform: translateY(0);
+		}
+	}
+	.animated-download-button {
+	  display: inline-flex;
+	  align-items: center;
+	  justify-content: center;
+	  padding: 5px 20px;
+	  border: 2px solid rgb(255, 255, 255);
+	  /* background: #3f076d;
+	  color: rgb(255, 255, 255); */
+	  text-decoration: none;
+	  border-style: groove;
+	  border-radius: 5px;
+	  font-size: 16px;
+	  font-weight: bold;
+	  cursor: pointer;
+	  outline: none;
+	  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+	  position: relative;
+	  overflow: hidden;
+	}
+	
+	.animated-download-button .icon {
+	  display: inline-block;
+	  margin-right: 10px;
+	  width: 16px;
+	  height: 16px;
+	  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M5 20h14v-2H5m14-9h-4V3H9v6H5l7 7 7-7z"/></svg>') center no-repeat;
+	  animation: buttonIconAnimation 1.5s ease-in-out infinite;
+	}
+	
+	.animated-download-button:hover {
+	  background-color: #5900b1;
+	  border-color: #4c2474;
+	}
+	
+	.animated-download-button:active {
+	  background-color: #235a85;
+	  border-color: #1b4b68;
+	}	
+/*learn more*/		
+	.learn-more-button {
+		display: inline-block;
+		padding: 10px 20px;
+		color: #000000;
+		text-decoration: none;
+		transition: color 0.3s;
+		outline: none;
+		position: relative;
+		font-weight: bold;
+		cursor: pointer;
+		background: none;
+		border: 2px solid rgb(0, 0, 0);
+		/* border-style:solid; */
+		vertical-align: middle;
+	}
+	
+	.learn-more-button .icon-right-arrow {
+		display: inline-block;
+		margin-left: 10px; 
+		transition: transform 0.3s;
+		animation: rightArrowSlide 2s infinite;
+	}
+	
+	.learn-more-button:hover {
+		color: #297dbb;
+		border: 2px solid rgb(0, 0, 0);
+	}
+	
+	.learn-more-button:active {
+		color: #235a85;
+		border: 2px solid rgb(0, 0, 0);
+	}
+	
 /* Image */
 
 	.image {
