@@ -2221,6 +2221,130 @@ input, select, textarea {
 	flex-wrap: wrap;
 }
 
+/*AOS*/
+	/* Keyframes for fade-in animation */
+	@keyframes fadeIn {
+		from { opacity: 0; transform: translateY(-20px); }
+		to { opacity: 1; transform: translateY(0); }
+	}
+
+	/* Keyframes for slide-in animation */
+	@keyframes slideIn {
+		from { opacity: 0; transform: translateX(-50px); }
+		to { opacity: 1; transform: translateX(0); }
+	}
+
+	/* Apply animations to elements */
+	.animated-text {
+		animation: fadeIn 1s ease-out forwards;
+	}
+
+	.animated-logo img {
+		animation: slideIn 1s ease-out forwards;
+	}
+
+	/* Add delay to create a sequence */
+	.animated-text:nth-child(2) {
+		animation-delay: 0.5s;
+	}
+
+	.animated-text:nth-child(3) {
+		animation-delay: 1s;
+	}
+
+	.animated-download-button {
+		animation: fadeIn 1s ease-out forwards;
+		animation-delay: 1.5s;
+	}
+
+	/* Blinking cursor animation */
+	@keyframes blink {
+		0% { opacity: 1; }
+		50% { opacity: 0; }
+		100% { opacity: 1; }
+	}
+
+	.blinking-cursor {
+		font-weight: 100;
+		font-size: 20px;
+		color: black;
+		animation: blink 1s step-end infinite;
+	}
+
+	/* Other styles for elements */
+	.header {
+		position: relative;
+		overflow: hidden;
+	}
+
+	.header .logo {
+		position: absolute;
+		left: -100px;
+		opacity: 0;
+		animation: slideIn 1s forwards;
+	}
+
+	.header h1, .header p, .header .typed-text-container {
+		opacity: 0;
+		animation: fadeIn 1s forwards;
+	}
+
+	.header h1 {
+		animation-delay: 0.5s;
+	}
+
+	.header p {
+		animation-delay: 1s;
+	}
+
+	.header .typed-text-container {
+		animation-delay: 1.5s;
+	}
+
+/*Carousel Effect*/
+	.project-container {
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		width: 100%;
+	}
+
+	.project-nav {
+		width: 20%;
+		border-right: 1px solid #ccc;
+		padding-right: 20px;
+	}
+
+	.project-nav ul {
+		list-style-type: none;
+		padding: 0;
+	}
+
+	.project-nav li {
+		padding: 10px 0;
+		cursor: pointer;
+		color: #333;
+	}
+
+	.project-nav li.active,
+	.project-nav li:hover {
+		color: #ff5f57; /* Highlight color */
+		font-weight: bold;
+	}
+
+	.project-content {
+		width: 80%;
+		padding-left: 20px;
+	}
+
+	.project-detail {
+		display: none;
+	}
+
+	.project-detail.active {
+		display: block;
+	}
+
 /* Skill Section*/
 	.skills-container {
 		display: flex;
