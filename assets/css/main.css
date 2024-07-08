@@ -2397,6 +2397,32 @@ input, select, textarea {
 		transform: scale(1.1);
 		z-index: 10; 
 	}
+/* Contact form */
+	.contact-form {
+		padding: 20px;
+		border-radius: 8px;
+	}
+	
+	.contact-form input, .contact-form textarea, .contact-form button {
+		width: 100%;
+		padding: 10px;
+		margin: 10px 0;
+		border: 1px solid #ddd;
+		border-radius: 4px;
+	}
+	
+	.contact-form button {
+		background-color: #007BFF;
+		color: #ffffff;
+		border: none;
+		cursor: pointer;
+		text-align: center;
+	}
+	
+	.contact-form button:hover {
+		background-color: #0056b3;
+	}
+
 /* Certifications Section Flexbox and Hover Styling */
 	.certifications-container {
 		display: flex;
@@ -3459,8 +3485,8 @@ input, select, textarea {
 		background-color: #ffffff;
 		color: #636363;
 		position: absolute;
-		width: 64em;
-		max-width: calc(100% - 4em);
+		width: 304em;
+		max-width: calc(100% - 0em);
 		padding: 1em;
 		background-color: #f7f7f7;
 		border-top-left-radius: 0.25em;

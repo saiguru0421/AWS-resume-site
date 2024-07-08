@@ -12,29 +12,30 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+		<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" crossorigin="anonymous" /></noscript>
 	</head>
 	<body class="is-preload">
-
-		<!-- Wrapper -->
-			<div id="wrapper">
-
 				<!-- Header -->
+				<div id="particles-js">
 					<header id="header" class="alt">
 						<!-- <span class="logo" data-aos="fade-down"><img src="images/logo.png" alt="Avatar" class="wdn-stretch rounded-corners" /></span> -->
 						<h1 data-aos="fade-down">Guru Subramaniam Shyamala</h1>
-						<p data-aos="fade-up">Contact info:<br />
-						<a href="https://www.linkedin.com/in/guru-subramaniam-shyamala/">@LinkedIn</a> and <a href=mailto:"guruss030601@gmail.com">guruss030601@gmail.com</a>.</p>
-						<div id="typed-text-container" data-aos="fade-up">
+						<p data-aos="fade-up"><br />
+							<a href="https://www.linkedin.com/in/guru-subramaniam-shyamala/" class="icon brands fa-linkedin alt"><span class="label">LinkedIn</span></a>
+							<a href="https://github.com/saiguru0421" class="icon brands fa-github alt"><span class="label">Github</span></a></p>
+							<h2>Traffic Counter
+							<div id="counter-number"> Loading...</div>	</h2>
+							<div id="typed-text-container" data-aos="fade-up">
 							<span id="typed-text"></span><span class="blinking-cursor">|</span>
 						</div>													
 						<div data-aos="fade-up">
 							<a href="https://aws-publicly-accessible-bucket.s3.ca-central-1.amazonaws.com/Guru+Subramaniam+Shyamala-resume.pdf" download="GuruSubramaniamShyamala_Resume.pdf" class="animated-download-button">
-								<span class="icon" aria-hidden="true"></span> Resume
+								<span></span> Resume
 							</a>
 						</div>							  
 					</header>
-
+				</div>
 				<!-- Nav -->
 					<nav id="nav">
 						<ul>
@@ -257,10 +258,6 @@
 				<!-- Footer -->
 					<footer id="footer">
 						<section>
-							<h2>Website Hit Counter</h2>
-							<div id="counter-number"> Loading...</div>
-						</section>
-						<section>
 							<h2>Contact information</h2>
 							<dl class="alt">
 								<dt>Address</dt>
@@ -275,9 +272,17 @@
 								<li><a href="https://github.com/saiguru0421" class="icon brands fa-github alt"><span class="label">Github</span></a></li>
 							</ul>
 						</section>
+						<!-- <section>
+							<div class="contact-form">
+								<h2>Contact information</h2>
+								<input type="text" id="name" placeholder="Name" required>
+								<input type="email" id="email" placeholder="Email" required>
+								<input type="text" id="subject" placeholder="Subject" required>
+								<textarea id="message" placeholder="Message" rows="4" required></textarea>
+								<button type="button" onclick="sendEmail()">Send </button>
+							</div>
+						</section> -->
 					</footer>
-
-			</div>
 
 		<!-- Scripts -->
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
@@ -293,13 +298,13 @@
 			<script src="assets/js/blinkingcursor.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+   			<script src="email.js"></script>
 			<script>
 			AOS.init({
 				duration: 1000,
 				once: false
 			});
 			</script>
-
-
 	</body>
 </html>
