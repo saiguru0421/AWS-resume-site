@@ -93,19 +93,19 @@ input, select, textarea {
 		box-sizing: inherit;
 	}
 
-	body {
+	/* body { */
 		/* background-color: #935d8c;
 		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
 		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
 		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
 		background-image: url("images/overlay.png"), linear-gradient(45deg, #e37682 15%, #5f4d93 85%); */
-		background-color: #2a2d34;
-		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #4f86c6 15%, #2a6f97 85%); /* Light Blue to Deep Blue Gradient */
+		/* background-color: #2a2d34;
+		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #4f86c6 15%, #2a6f97 85%);
 		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #4f86c6 15%, #2a6f97 85%);
 		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #4f86c6 15%, #2a6f97 85%);
-		background-image: url("images/overlay.png"), linear-gradient(45deg, #4f86c6 15%, #2a6f97 85%);
+		background-image: url("images/overlay.png"), linear-gradient(45deg, #4f86c6 15%, #2a6f97 85%); */
 
-	}
+	/* }
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 			-moz-animation: none !important;
@@ -116,7 +116,146 @@ input, select, textarea {
 			-webkit-transition: none !important;
 			-ms-transition: none !important;
 			transition: none !important;
-		}
+		} */
+/* Basic */
+	body {
+		line-height: 1;
+		background-color: #2a2d34;
+		background-image: linear-gradient(135deg, #6200ea, #b388ff);
+		color: rgba(255, 255, 255, 0.65);
+		overflow-x: hidden; /* Prevent horizontal scrolling */
+	}
+
+	body, input, select, textarea {
+		font-family: "Source Sans Pro", sans-serif;
+		font-size: 1.20em;
+		font-weight: 300;
+		line-height: 1.65;
+	}
+
+	a {
+		text-decoration: none;
+		border-bottom: dotted 1px;
+		color: #ffffff;
+	}
+
+	a:hover {
+		border-bottom-color: transparent;
+		color: #b388ff;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		font-weight: 300;
+		line-height: 1.5;
+		margin: 0 0 0.7em 0;
+		letter-spacing: -0.025em;
+		color: #ffffff;
+	}
+
+	h1 {
+		font-size: 2.5em;
+		line-height: 1.2;
+		position: relative; /* Ensure the name is positioned relative to the stroke */
+		z-index: 10; /* Make sure the name appears above the stroke */
+	}
+
+	h2 {
+		font-size: 1.5em;
+	}
+
+	h3 {
+		font-size: 1.25em;
+	}
+
+	p {
+		margin: 0 0 2em 0;
+	}
+
+	/* Header */
+	#header {
+		padding: 5em 5em 1em 5em;
+		text-align: center;
+		position: relative;
+		overflow: hidden; /* Ensure shapes don't overflow */
+	}
+
+	#header h1 {
+		margin: 0 0 0.25em 0;
+		color: #ffffff;
+		position: relative;
+		z-index: 10;
+	}
+
+	#header p {
+		font-size: 1.25em;
+		letter-spacing: -0.025em;
+		color: #ffffff;
+		position: relative;
+		z-index: 10;
+	}
+
+	#header .button {
+		position: relative;
+		z-index: 10;
+	}
+
+	.circle {
+		width: 400px;
+		height: 400px;
+		background: rgba(255, 255, 255, 0.1);
+		border-radius: 50%;
+		position: absolute;
+		top: -100px; 
+		left:-60px;
+		z-index: 1;
+	}
+
+	.stroke {
+		width: 500px;
+		height: 600px;
+		background: rgba(255, 255, 255, 0.1);
+		border-radius: 20%;
+		position: absolute;
+		bottom: -40px;
+		right: -200px; 
+		transform: rotate(45deg);
+		z-index: 1;
+	}
+
+	#nav {
+		background-color: #ffffff;
+		color: #636363;
+		padding: 1em;
+		background-color: #f7f7f7;
+		text-align: center;
+	}
+
+	#nav a {
+		color: #636363;
+	}
+
+	#nav a:hover {
+		color: #7c4dff;
+	}
+
+	#nav ul li a.active {
+		background-color: #ffffff;
+		color: #7c4dff;
+	}
+
+	/* Button */
+	#main .button {
+		background-color: #b388ff;
+		color: #ffffff;
+	}
+
+	#main .button:hover {
+		background-color: #7c4dff;
+	}
+
+	#main .button:active {
+		background-color: #6200ea;
+	}
 
 /* Type */
 
@@ -2664,39 +2803,100 @@ input, select, textarea {
 	.animated-download-button:active {
 	  background-color: #235a85;
 	  border-color: #1b4b68;
-	}	
-/*learn more*/		
-	.learn-more-button {
-		display: inline-block;
-		padding: 10px 20px;
-		color: #000000;
-		text-decoration: none;
-		transition: color 0.3s;
-		outline: none;
+	}
+	
+/* Learn more button*/
+	button {
 		position: relative;
-		font-weight: bold;
+		display: inline-block;
 		cursor: pointer;
-		background: none;
-		border: 2px solid rgb(0, 0, 0);
-		/* border-style:solid; */
+		outline: none;
+		border: 0;
+		vertical-align: middle;
+		text-decoration: none;
+		background: transparent;
+		padding: 0;
+		font-size: inherit;
+		font-family: inherit;
+	}
+	
+	button.learn-more {
+		width: 12rem;
+		height: auto;
+	}
+	
+	button.learn-more .circle {
+		transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+		position: relative;
+		display: inline-block;
+		margin: 0;
+		width: 3rem;
+		height: 3rem;
+		background: #282936;
+		border-radius: 1.625rem;
+		overflow: hidden;
 		vertical-align: middle;
 	}
 	
-	.learn-more-button .icon-right-arrow {
+	button.learn-more .circle .icon {
+		transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 1.125rem;
+		height: 0.125rem;
+		background: none;
+	}
+	
+	button.learn-more .circle .icon.arrow {
+		width: 1.125rem;
+		height: 0.125rem;
+		background: none;
+	}
+	
+	button.learn-more .circle .icon.arrow::before {
+		position: absolute;
+		content: "";
+		top: -0.29rem;
+		right: 0.0625rem;
+		width: 0.625rem;
+		height: 0.625rem;
+		border-top: 0.125rem solid #fff;
+		border-right: 0.125rem solid #fff;
+		transform: rotate(45deg);
+	}
+	
+	button.learn-more .button-text {
+		transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
 		display: inline-block;
-		margin-left: 10px; 
-		transition: transform 0.3s;
-		animation: rightArrowSlide 2s infinite;
+		padding: 0.75rem 0;
+		margin-left: 1rem;
+		color: #282936;
+		font-weight: 700;
+		line-height: 1.6;
+		text-align: center;
+		text-transform: uppercase;
+		vertical-align: middle;
 	}
 	
-	.learn-more-button:hover {
-		color: #297dbb;
-		border: 2px solid rgb(0, 0, 0);
+	button:hover .circle {
+		width: 100%;
 	}
 	
-	.learn-more-button:active {
-		color: #235a85;
-		border: 2px solid rgb(0, 0, 0);
+	button:hover .circle .icon.arrow {
+		background: #fff;
+		transform: translate(1rem, -50%);
+	}
+	
+	button:hover .button-text {
+		color: #fff;
+		margin-left: 0;
+	}
+	
+	button .button-text a {
+		color: inherit;
+		text-decoration: none;
 	}
 	
 /* Image */
