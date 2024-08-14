@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     var typedTextContainer = document.getElementById('typed-text');
-    var textToType = "Download the site as resume.";
+    var textToType = "Welcome! I'm thrilled to have you here and eager to share my knowledge and expertise. Let's work together to learn and grow.";
     var index = 0, interval = 150;
   
 
